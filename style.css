@@ -1,13 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 body {
-    background-color: #f8f9fa;
-    color: #333;
+    background: #f8f9fa;
+    
 }
 
 .navbar {
@@ -15,13 +14,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 8%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    
 }
 
 .logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     color: #4a4a4a;
 }
 
@@ -35,7 +33,7 @@ body {
     text-decoration: none;
     color: #666;
     font-size: 16px;
-    transition: color 0.3s;
+    
 }
 
 .nav-links a:hover {
@@ -81,19 +79,19 @@ body {
 }
 
 .cta-btn {
-    background-color: #2196F3;
-    color: white;
+    background: #2196F3;
+    color: #fff;
     border: none;
     padding: 14px 28px;
     font-size: 16px;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);
-    transition: background 0.3s;
+    
 }
 
 .cta-btn:hover {
-    background-color: #1e88e5;
+    background: #1e88e5;
 }
 
 .hero-image {
@@ -109,47 +107,28 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .logo {
-        font-size: 20px;
-    }
+    .logo { font-size: 20px; }
+    .nav-links a { font-size: 14px; }
+    .username { font-size: 14px; }
     
-    .nav-links a {
-        font-size: 14px;
-    }
-    
-    .username {
-        font-size: 14px;
-    }
-
-    .hero-content h1 {
-        font-size: 36px;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-    }
-
-    .hero-image img {
-        width: 350px;
-    }
+    .hero-content h1 { font-size: 36px; }
+    .hero-content p { font-size: 14px; }
+    .hero-image img { width: 350px; }
 }
 
 @media (max-width: 768px) {
     .nav-links {
         display: none;
     }
-
     .navbar {
         padding: 15px 5%;
     }
-
     .hero-section {
         flex-direction: column;
         text-align: left;
         padding: 40px 5%;
         gap: 50px;
     }
-
     .hero-image img {
         width: 280px;
     }
